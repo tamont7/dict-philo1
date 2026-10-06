@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="Dictionnaire de philosophie : notions, auteurs, recherche et définition du jour.">
+  <title>La philosophie de A à Z — Le dictionnaire</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="La philosophie de A à Z, accueil"><span class="brand-mark">φ</span><span>La philosophie<span class="brand-sub">DE A À Z</span></span></a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="/#dictionnaire" data-nav="dictionary">Le dictionnaire</a>
+      <a href="/#du-jour" data-nav="daily">Définition du jour</a>
+      <a href="/?vue=favoris#dictionnaire" data-nav="saved">Mes favoris <span id="saved-count">0</span></a>
+    </nav>
+    <button class="icon-button" id="theme-toggle" aria-label="Activer le thème sombre" title="Changer le thème"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.2A8.5 8.5 0 0 1 9.8 4a8.5 8.5 0 1 0 10.4 10.2Z"/></svg></button>
+  </header>
+  <main id="main"><div class="loading" role="status">Ouverture du dictionnaire…</div></main>
+  <footer class="site-footer"><a href="/" class="footer-brand">φ <span>La philosophie de A à Z</span></a><button id="about-button" class="text-button">À propos & sources</button></footer>
+  <dialog id="about-dialog"><button class="dialog-close icon-button" aria-label="Fermer">×</button><span class="eyebrow">À PROPOS</span><h2>À propos du dictionnaire</h2><p>Ce site permet de parcourir le dictionnaire fourni, d’explorer ses notions et ses auteurs et de découvrir une nouvelle définition chaque jour.</p><p>Source : <cite>La philosophie de A à Z, nouvelle édition</cite>, Éditions Hatier, 2021. Les textes sont extraits de l’ouvrage ; les références de pages sont indiquées dans les entrées.</p><p>La définition du jour change à minuit, heure de Paris. Vos favoris et votre choix de thème sont enregistrés uniquement dans ce navigateur.</p></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

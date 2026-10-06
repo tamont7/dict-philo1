@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.vercel/
+test-results/
+playwright-report/
+coverage/
+*.log
+
+.env
+.env.*
+!.env.example
+.aws/
+
+# Source du livre conservée localement ; le site utilise data/dictionary.json.
+/La philosophie de A à Z*/
+
+.DS_Store
